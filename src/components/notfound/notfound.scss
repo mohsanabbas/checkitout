@@ -1,0 +1,13 @@
+.not__found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    display: flex;
+    align-items: center;
+    font-size: $font-l;
+    line-height: $size-s;
+    text-align: center;
+    justify-content: center;
+  }
+}

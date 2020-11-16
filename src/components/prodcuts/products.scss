@@ -1,0 +1,29 @@
+.product__container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  &__item {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em 0.3em;
+    align-items: center;
+    padding: 2em;
+    font-size: $font-light;
+    border-radius: $radius-circle;
+    background: $white;
+    box-shadow: 0 8px 6px -6px $grey-shadow;
+  }
+}
+::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
