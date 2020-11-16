@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 270px;
+  border-radius: $radius-circle;
+  border: 1px solid $status-pending;
+
+  &__wrapper {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    img {
+      width: 100%;
+      border-radius: 3px;
+    }
+  }
+  &__separator {
+    display: flex;
+    width: 90%;
+    border-bottom: 1px solid $grey-eight;
+    margin: $size-s auto;
+  }
+  &__title {
+    display: flex;
+    text-align: center;
+    font-size: $font-xs;
+    align-items: center;
+    justify-content: center;
+  }
+}

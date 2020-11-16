@@ -1,0 +1,66 @@
+@import "./settings/settings.scss";
+.main {
+  display: flex;
+  background: $grey-one;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+}
+.home {
+  @extend.main;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-image: linear-gradient(
+      179.94deg,
+      rgba(25, 25, 25, 0.4) 0.03%,
+      rgba(25, 25, 25, 0) 26.41%,
+      rgba(25, 25, 25, 0.306) 51.13%,
+      rgba(25, 25, 25, 0.8) 79.88%,
+      rgb(25, 25, 25) 99.97%
+    ),
+    // linear-gradient(0deg, rgba(25, 25, 25, 0.65), rgba(25, 25, 25, 0.65)),
+    url("https://courier-images-web.imgix.net/static/img/img-welcome-bg.png?auto=compress,format&fit=max&w=500&h=400&dpr=2&fm=png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // border-radius: 24px 24px 0 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  @include respond(ph) {
+    background-position: center center;
+  }
+
+  &__link {
+    padding: 1em;
+    background: $orange;
+    font-size: $font-m;
+    color: $white;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 24px 24px 0 0;
+    animation: link 2s linear infinite;
+  }
+  &__heading {
+    display: flex;
+    font-weight: $font-xxl;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: $primary-lighter;
+  }
+}
+@keyframes link {
+  50% {
+    opacity: 0.5;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,19 @@
+$MQs: true;
+@mixin respond($breakpoint) {
+  @if $breakpoint == dt {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tb {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==ph {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.chip__container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  &__chip {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 280px;
+    height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px $grey-shadow;
+    text-align: center;
+    margin: 1em 0.3em;
+    align-items: center;
+    padding: 2em;
+    font-size: $font-light;
+    // border: 1px solid $orange;
+    border-radius: $radius-circle;
+    background: $white;
+  }
+  :hover {
+    background-color: $status-pending;
+    color: $white;
+  }
+}

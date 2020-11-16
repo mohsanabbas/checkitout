@@ -1,0 +1,38 @@
+.search {
+  display: flex;
+  justify-content: center;
+  font-size: $font-xs;
+  align-items: center;
+  margin-top: 4em;
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 90%;
+    &__label {
+      display: flex;
+      text-transform: uppercase;
+      font-size: $size-s;
+      margin-bottom: 0.5rem;
+      font-weight: $font-bold;
+      letter-spacing: 0.1rem;
+      padding-left: $size-m;
+    }
+    &__input {
+      border: none;
+      width: 100%;
+      font-size: $font-s;
+      padding: 2rem;
+      border-radius: $radius-circle;
+      border: 1px solid $grey-two;
+      text-align: left;
+    }
+    &__input:focus {
+      outline: none;
+      color: $grey-eleven;
+      box-shadow: 0 8px 6px -6px $grey-shadow;
+      transition: box-shadow 0.2s ease !important;
+      vertical-align: middle !important;
+    }
+  }
+}
